@@ -33,7 +33,7 @@ async function sendMessage() {
         chatWindow.removeChild(loadingMessage);
         const botMessage = document.createElement('div');
         botMessage.className = 'message bot';
-        botMessage.innerHTML = `<span>${botResponse}</span>`;
+        botMessage.innerHTML = `<span class='format-message'>${botResponse}</span>`;
         chatWindow.appendChild(botMessage);
 
         chatWindow.scrollTop = chatWindow.scrollHeight;
