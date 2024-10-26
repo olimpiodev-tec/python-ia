@@ -24,5 +24,5 @@ def search():
     output = model.generate_content(input_ia)
     return {'message': output.text}
 
-
-app.run(debug=True)
+#if __name__ == '__main__':
+app.run(debug=os.getenv('FLASK_DEBUG'))
